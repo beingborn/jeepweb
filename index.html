@@ -1,0 +1,1054 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>지프 리디자인</title>
+
+    <!-- CSS files -->
+    <link rel="stylesheet" href="./css/reset.css" />
+    <link rel="stylesheet" href="./css/default.css" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+
+
+    <!-- HTML -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- JS -->
+
+    <link href="https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Alfa+Slab+One&display=swap" rel="stylesheet">
+
+    <!-- font-awesome -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+      integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+
+   
+
+
+  </head>
+  <body>
+    <div class="black-bg"></div>
+
+    <div class="wrap">
+      <!-- 헤더 섹션 -->
+      <section class="header">
+        <h2 class="blind">헤더</h2>
+        <div class="inner">
+          <div class="head-wrap">
+            <h2 class="blind">로고</h2>
+
+            <h1 id="main-logo" >
+              <a href="http://www.naver.com" id="logo-link">
+                <img src="./img/JEEP-로고1.png" alt="지프 메인 로고" id="main-logo-img" />
+              </a>
+            </h1>
+            
+            
+            <ul class="top-gnb">
+              <li><a href="#">모델소개</a></li>
+              <li><a href="#">JEEP LIFE</a></li>
+              <li><a href="#">서비스</a></li>
+              <li><a href="#">3D모델보기</a></li>
+            </ul>
+            <ul class="top-gnb2">
+              <li><a href="#">시승문의</a></li>
+              <li><a href="#">딜러찾기</a></li>
+              <li><a href="#">PHP 080-353-0405</a></li>
+            </ul>
+            <h2 class="blind">검색</h2>
+            <div class="top-searchbar">
+              <fieldset>
+                <label for="main-search" class="blind">gnb-메인 검색</label>
+                <i class="fa-solid fa-magnifying-glass" style="color: #fff; font-size: 12px"></i>
+                <input type="text" id="main-search" name="name" required minlength="4" maxlength="8" size="10" class="search-btn" />
+              </fieldset>
+            </div>
+          </div>
+        </div>
+
+        <h2 class="blind">상단 GNB 상세 내용</h2>
+        <div class="hide-gnb">
+          <div class="inner">
+          <div class="hide-gnb-wrap">
+             <ul class="first-col model">              
+               <li><a href="#">GRAND CHEROKEE</a></li>               
+               <li><a href="#">RENEGADE</a></li>
+               <li><a href="#">WRANGLER</a></li>
+               <li><a href="#">WRANGLER 4XE</a></li>
+               <li><a href="#">GLADIATOR</a></li>
+             </ul>
+
+             <ul class="first-col brand-gnb">
+              <li><a href="#">BRAND STORY</a></li>
+              <li><a href="#">PRESS ROOM</a></li>
+              <li><a href="#">PARTNERSHIP</a></li>
+            </ul>
+
+             <ul class="first-col service">
+               <li><a href="#">서비스 캠페인</a></li>
+               <li><a href="#">서비스 예약</a></li>
+               <li><a href="#">연장 보증</a></li>
+               <li><a href="#">제도 관련 안내</a></li>
+               <li><a href="#">부품 관련 안내</a></li>
+               <li><a href="#">프로모션</a></li>
+               <li><a href="#">문의하기</a></li>
+             </ul>
+
+
+             <ul class="first-col 3d-model">
+               <li><a href="#">WRANGULAR</a></li>
+               <li><a href="#">GLADIATOR</a></li>
+               <li><a href="#">RENEGADE</a></li>
+               <li><a href="#">GRAND CHEROKEE</a></li>
+             </ul>
+            </div>
+          </div>
+        </div>
+
+      </section>
+      <!-- 헤더 섹션 끝 -->
+    
+      <!-- 히어로 섹션 -->
+      <h2 class="blind">메인 비주얼 영역</h2>
+      <section class="hero">
+        <div class="main-img">
+          <!-- <div class="black-bg"></div> -->
+          <div class="black-line"></div>
+          <div class="main-txt">
+            <p class="main-sub">CITY DRIVING</p>
+            <h2 class="main-title" style="display: block">RANGULAR NEW</h2>
+          </div>
+          <div class="main-btn-wrap">
+            <div class="main-btngroup">
+              <button type="button" class="main-btn"><span class="ride-qna">시승문의</span></button>
+              <button type="button" class="main-btn"><span class="carculate" onClick="location.href='sub-1.html'">견적 요청</span></button>
+              <button type="button" class="main-btn"><span class="katalog">카탈로그</span></button>
+              <button type="button" class="main-btn"><span class="cs-support">고객지원</span></button>
+              <button type="button" class="main-btn"><span class="promotion">프로모션</span></button>
+            </div>
+          </div>
+          
+        </div>
+      </section>
+     
+
+
+      <h2 class="blind">차 선택 및 스펙 확인 슬라이드</h2>
+      <section class="car-select">
+        <div class="swiper carSwiper">
+          <div class="swiper-wrapper">
+    
+            <div class="swiper-slide 1tiem">
+              <div class="car-total-wrap">
+                <div class="car-info">
+                  <div class="car-title">
+                    <p>The best car of 2024</p>
+                    <h2>JEEP RANGULAR</h2>
+                  </div>
+                  <div class="car-spec">
+                    <div>
+                      <p class="spec-tit">WSTP</p>
+                      <p class="spec-sub">5.1Mi</p>
+                    </div>
+                    <div>
+                      <p class="spec-tit">SPEED</p>
+                      <p class="spec-sub">180km</p>
+                    </div>
+                    <div>
+                      <p class="spec-tit">HP</p>
+                      <p class="spec-sub">355</p>
+                    </div>
+                  </div>
+                  <p class="car-recommend">
+                    전설적인 오프로드 능력과 아이콘적인 디자인. 오프로드의 정점. 
+                  </p>
+                </div>
+                <div class="img-box">
+                  <img src="./img/jeep-22806.png" width="788" height="524" alt="메인 1번 자동차" />
+                </div>  
+              </div>
+            </div>
+    
+            <div class="swiper-slide 2item">
+              <div class="car-total-wrap" >
+                <div class="car-info">
+                  <div class="car-title">
+                    <p>A small SUV packed with personality</p>
+                    <h2>RENEGADE</h2>
+                  </div>
+                  <div class="car-spec">
+                    <div>
+                      <p class="spec-tit">WSTP</p>
+                      <p class="spec-sub">6.4Mi</p>
+                    </div>
+                    <div>
+                      <p class="spec-tit">SPEED</p>
+                      <p class="spec-sub">182km</p>
+                    </div>
+                    <div>
+                      <p class="spec-tit">HP</p>
+                      <p class="spec-sub">170</p>
+                    </div>
+                  </div>
+                  <p class="car-recommend">
+                    타 모델들과 다른 압도적인 개성과 스타일, 도시에 어울리는 SUV
+                  </p>
+                </div>
+                <div class="img-box">
+                  <img src="./img/sideprofile2.png" width="788" height="524" alt="메인 2번 자동차" />
+                </div>  
+              </div>
+            </div>
+    
+               <div class="swiper-slide 3item">
+                 <div class="car-total-wrap" >
+                   <div class="car-info">
+                     <div class="car-title">
+                       <p>Excellent trailing ability car</p>
+                       <h2>GLADIATOR</h2>
+                     </div>
+                     <div class="car-spec">
+                       <div>
+                         <p class="spec-tit">WSTP</p>
+                         <p class="spec-sub">4.4Mi</p>
+                       </div>
+                       <div>
+                         <p class="spec-tit">SPEED</p>
+                         <p class="spec-sub">174km</p>
+                       </div>
+                       <div>
+                         <p class="spec-tit">HP</p>
+                         <p class="spec-sub">541</p>
+                       </div>
+                     </div>
+                     <p class="car-recommend">
+                      엄청난 실용성과 트레일링 능력, 안정적인 차의 끝
+                     </p>
+                   </div>
+                   <div class="img-box">
+                     <img src="./img/sideprofile3.png" width="788" height="524" alt="메인 3번 자동차" />
+                   </div>  
+                 </div>
+               </div>
+    
+            <div class="swiper-slide item4">
+              <div class="car-total-wrap">
+                <div class="car-info">
+                  <div class="car-title">
+                    <p>A car loved around the world</p>
+                    <h2 >GRAND CHEROKEE L</h2>
+                  </div>
+                  <div class="car-spec">
+                    <div>
+                      <p class="spec-tit">WSTP</p>
+                      <p class="spec-sub">7.4Mi</p>
+                    </div>
+                    <div>
+                      <p class="spec-tit">SPEED</p>
+                      <p class="spec-sub">183km</p>
+                    </div>
+                    <div>
+                      <p class="spec-tit">HP</p>
+                      <p class="spec-sub">342</p>
+                    </div>
+                  </div>
+                  <p class="car-recommend">
+                    지프의 베스트 셀러, 흠 잡을 곳 없는 유틸리티 중형 SUV
+                  </p>
+                </div>
+                <div class="img-box">
+                  <img src="./img/sideprofile4.png" width="788" height="524" alt="메인 4번 자동차" />
+                </div>  
+              </div>
+            </div>
+    
+                <div class="swiper-slide item5">
+                  <div class="car-total-wrap">
+                    <div class="car-info">
+                      <div class="car-title">
+                        <p>definitive electric vehicle system</p>
+                        <h2 style="white-space:nowrap; font-size: 40px;">GRAND CHEROKEE 4XE</h2>
+                      </div>
+                      <div class="car-spec">
+                        <div>
+                          <p class="spec-tit">WSTP</p>
+                          <p class="spec-sub">7.4Mi</p>
+                        </div>
+                        <div>
+                          <p class="spec-tit">SPEED</p>
+                          <p class="spec-sub">183km</p>
+                        </div>
+                        <div>
+                          <p class="spec-tit">HP</p>
+                          <p class="spec-sub">342</p>
+                        </div>
+                      </div>
+                      <p class="car-recommend">
+                        경제성과 친환경성을 제공하면서도 Jeep 브랜드의 전통적인 풀 사이즈 SUV
+                      </p>
+                    </div>
+                    <div class="img-box">
+                      <img src="./img/sideprofile5.png" width="788" height="524" alt="메인 5번 자동차" />
+                    </div> 
+                  </div>
+                </div>
+    
+          </div>
+    
+        <div class="swiper-button-next"></div>
+        <div class="swiper-button-prev"></div>
+    
+           <!-- <div class="inner"> -->
+             <div class="swiper-pagination"></div>
+           <!-- </div> -->
+
+    </div>
+  </section>    
+
+  <!-- 메인 컨텐츠 섹션 끝 -->
+    
+      <!-- 브랜드 스토리 섹션 -->
+      <section class="brand-story">
+        <div class="inner">
+          <div class="width1440">
+            <h2 class="title-font">브랜드 스토리</h2>
+            <section class="sub-font">
+              지난 78년 동안 자유, 모험, 진정성 Jeep®의 핵심가치가 모든 Jeep® 모델의 DNA에 구현되어 있습니다.
+              <br />
+              Go Anywhere. Do Anything! 세월이 흘러도 변하지 않을 당신만의 스토리를 만들어 보세요.
+            
+
+           <div class="table-flex">
+              <h2 class="table-head">1970</h2>
+
+              <div class="table-wrapper">
+              <div class="table">
+                <p class="table-year">1970</p>
+                <p class="table-sub" style="display: inline-block; width: 430px;">
+                  전쟁용 차량으로 사용하여 전쟁 후에 민간 시장 출현
+                  1970년대에는 스포츠 유틸리티 차량으로 인기를 크게 얻어 
+                  오지게 많이 생산해서 사람들이 크게 좋아했음
+                </p>
+               </div>
+
+               
+              <div class="table">
+                <p class="table-year">1980</p>
+                <p class="table-sub" style="display: inline-block; width: 430px;">
+                  Jeep® Grand Cherokee(XJ) 출시, SUB 차량의 기준으로써 자리 매김.
+                  4x4 시스템, 시프트 온 기능 업계 최초 출시 그래서 우리 이제 대기업이야
+                  라고 뻐기고 다녔던 시절임
+                </p>
+               </div>
+
+               
+              <div class="table">
+                <p class="table-year">1990</p>
+                <p class="table-sub" style="display: inline-block; width: 430px;">
+                  Cherokee WJ가 도입,  Jeep의 고급 SUV로서 
+                  처음 출시된 모델. 판매량 62만 9천으로 급등
+                  이젠 매니악해져버려가지고 인생이 너무 써짐 하지만 앞으로도 열심히하겠음!
+                </p>
+               </div>
+
+               <div class="table">
+                <p class="table-year">2000</p>
+                <p class="table-sub" style="display: inline-block; width: 430px;">
+                  Cherokee WJ가 도입,  Jeep의 고급 SUV로서 
+                  처음 출시된 모델. 판매량 62만 9천으로 급등
+                  이젠 매니악해져버려가지고 인생이 너무 써짐 하지만 앞으로도 열심히하겠음!
+                </p>
+               </div>
+
+
+              </div>
+
+
+           </div>
+          </div>  
+        </section>
+        <!-- 브랜드 인기 모델 -->
+        <section class="popular-model" id="whole-ranking">
+          <div class="radial-bg"></div>
+          <div class="inner">
+            <div class="rank-wrap">
+              <h2 class="title-font">JEEP 인기 모델</h2>
+              <p class="sub-font">최근 1년 간 가장 많이 사랑해주신 모델들입니다. </p>
+              <div class="rank-btn-group">
+                <button class="rank-btn  whole-btn" type="button">전체 순위</button>
+                <button class="rank-btn btn-20" type="button">20대</button>
+                <button class="rank-btn btn-30" type="button">30대</button>
+                <button class="rank-btn btn-40" type="button">40대 이상</button>
+              </div>
+            </div>
+
+                <div class="car-imgwrap">
+                   <div class="car-imgbox">
+                     <img src="../JEEP리디자인/img/Frame-8.png" alt="전체 순위 1위 자동차 이미지">
+                     <div class="car-name">
+                       <h2>1위 JEEP RAGULAR</h2>
+                       <p>판매량 2300만대<span class="hash-tag"># 안정적이다 가성비 있다. 유지가 쉽다.</span></p>
+                     </div>
+                   </div>
+
+                   <div class="car-imgbox">
+                     <img src="../JEEP리디자인/img/small-sizecar/Frame-16.png" alt="전체 순위 2위 자동차 이미지">
+                     <div class="car-name">
+                       <h2>2위 JEEP Grand Cherokee</h2>
+                       <p>판매량 3300만대<span class="hash-tag">#고급스런 인테리어 #견고한 구조 #강력한 오프로드 성능</span></p>
+                     </div>
+                   </div>
+
+                   <div class="car-imgbox last-item">
+                     <img src="../JEEP리디자인/img/small-sizecar/Frame11.png" alt="전체 순위 3위 자동차 이미지">
+                     <div class="car-name">
+                       <h2>3위 JEEP Renegade</h2>
+                       <p>판매량 2100만대<span class="hash-tag">#높은 연비 효율성 #다양한 주행 모드</span></p>
+                     </div>
+                   </div>
+              </div>
+              <div class="trans-border"></div>
+          </div>
+        </section>
+
+        <section class="popular-model" id="ranking-20">
+          <div class="radial-bg"></div>
+          <div class="inner">
+            <div class="rank-wrap">
+              <h2 class="title-font">JEEP 인기 모델</h2>
+              <p class="sub-font">최근 1년 간 가장 많이 사랑해주신 모델들입니다. </p>
+              <div class="rank-btn-group">
+                <button class="rank-btn  whole-btn" type="button">전체 순위</button>
+                <button class="rank-btn btn-20" type="button">20대</button>
+                <button class="rank-btn btn-30" type="button">30대</button>
+                <button class="rank-btn btn-40" type="button">40대 이상</button>
+              </div>
+            </div>
+
+                <div class="car-imgwrap">
+                   <div class="car-imgbox">
+                     <img src="../JEEP리디자인/img/rank20-1.png" alt="20대 순위 1위 자동차 이미지">
+                     <div class="car-name">
+                       <h2>1위 JEEP RENEGADE</h2>
+                       <p>판매량 3200만대<span class="hash-tag">#안정적이다 #가볍다 #넓은 수납</span></p>
+                     </div>
+                   </div>
+
+                   <div class="car-imgbox">
+                     <img src="../JEEP리디자인/img/rank20-2.png" alt="20대 순위 2위 자동차 이미지">
+                     <div class="car-name">
+                       <h2>2위 JEEP GRAND CHEROKEE L</h2>
+                       <p>판매량 2700만대<span class="hash-tag">#강력한 연비 #전기차 #강력한 오프로드 차량</span></p>
+                     </div>
+                   </div>
+
+                   <div class="car-imgbox last-item">
+                     <img src="../JEEP리디자인/img/rank20-3.png" alt="20대 순위 3위 자동차 이미지">
+                     <div class="car-name">
+                       <h2>3위 JEEP GLADIATOR</h2>
+                       <p>판매량 1900만대<span class="hash-tag">#호불호없는 #다양한 커스텀</span></p>
+                     </div>
+                   </div>
+              </div>
+              <div class="trans-border"></div>
+          </div>
+        </section>
+
+        <section class="popular-model" id="ranking-30">
+          <div class="radial-bg"></div>
+          <div class="inner">
+            <div class="rank-wrap">
+              <h2 class="title-font">JEEP 인기 모델</h2>
+              <p class="sub-font">최근 1년 간 가장 많이 사랑해주신 모델들입니다. </p>
+              <div class="rank-btn-group">
+                <button class="rank-btn  whole-btn" type="button">전체 순위</button>
+                <button class="rank-btn btn-20" type="button">20대</button>
+                <button class="rank-btn btn-30" type="button">30대</button>
+                <button class="rank-btn btn-40" type="button">40대 이상</button>
+              </div>
+            </div>
+
+                <div class="car-imgwrap">
+                   <div class="car-imgbox">
+                     <img src="../JEEP리디자인/img/rank30-2.png" alt="">
+                     <div class="car-name">
+                       <h2>1위 JEEP RAGULAR</h2>
+                       <p>판매량 2300만대<span class="hash-tag"># 안정적이다 가성비 있다. 유지가 쉽다.</span></p>
+                     </div>
+                   </div>
+
+                   <div class="car-imgbox">
+                     <img src="../JEEP리디자인/img/rank30-1.png" alt="">
+                     <div class="car-name">
+                       <h2>2위 JEEP Grand Cherokee</h2>
+                       <p>판매량 3300만대<span class="hash-tag">#고급스런 인테리어 #견고한 구조 #강력한 오프로드 성능</span></p>
+                     </div>
+                   </div>
+
+                   <div class="car-imgbox last-item">
+                     <img src="../JEEP리디자인/img/rank30-3.png" alt="">
+                     <div class="car-name">
+                       <h2>3위 JEEP Renegade</h2>
+                       <p>판매량 2100만대<span class="hash-tag">#높은 연비 효율성 #다양한 주행 모드</span></p>
+                     </div>
+                   </div>
+              </div>
+              <div class="trans-border"></div>
+          </div>
+        </section>
+
+        <section class="popular-model" id="ranking-40">
+          <div class="radial-bg"></div>
+          <div class="inner">
+            <div class="rank-wrap">
+              <h2 class="title-font">JEEP 인기 모델</h2>
+              <p class="sub-font">최근 1년 간 가장 많이 사랑해주신 모델들입니다. </p>
+              <div class="rank-btn-group">
+                <button class="rank-btn  whole-btn" type="button">전체 순위</button>
+                <button class="rank-btn btn-20" type="button">20대</button>
+                <button class="rank-btn btn-30" type="button">30대</button>
+                <button class="rank-btn btn-40"  type="button">40대 이상</button>
+              </div>
+            </div>
+
+                <div class="car-imgwrap">
+                   <div class="car-imgbox">
+                     <img src="../JEEP리디자인/img/rank40-1.png" alt="">
+                     <div class="car-name">
+                       <h2>1위 JEEP RAGULAR</h2>
+                       <p>판매량 2300만대<span class="hash-tag"># 안정적이다 가성비 있다. 유지가 쉽다.</span></p>
+                     </div>
+                   </div>
+
+                   <div class="car-imgbox">
+                     <img src="../JEEP리디자인/img/rank40-2.png" alt="">
+                     <div class="car-name">
+                       <h2>2위 JEEP Grand Cherokee</h2>
+                       <p>판매량 3300만대<span class="hash-tag">#고급스런 인테리어 #견고한 구조 #강력한 오프로드 성능</span></p>
+                     </div>
+                   </div>
+
+                   <div class="car-imgbox last-item">
+                     <img src="../JEEP리디자인/img/rank30-2.png" alt="">
+                     <div class="car-name">
+                       <h2>3위 JEEP Renegade</h2>
+                       <p>판매량 2100만대<span class="hash-tag">#높은 연비 효율성 #다양한 주행 모드</span></p>
+                     </div>
+                   </div>
+              </div>
+              <div class="trans-border"></div>
+          </div>
+        </section>
+        <!-- 나만의 JEEP 만들기 -->
+        <section class="own-jeep">
+
+          <div class="inner">
+            <h2 class="title-font">나만의 JEEP 만들기</h2>
+            <p class="sub-font">3D 프로그램을 통해 커스텀할 수 있습니다. 시승 신청 전 취향을 만들어보세요.</p>
+          </div>
+          <div class="img-grid">
+            <div class="items itemA" onclick="location.href='#'" >
+              <img class="hover-item1" id="jeep-img" src="../JEEP리디자인/img/grid-item1.png" alt="">
+              <div class="items-sub">
+                <p>Grand Cherokee</p>
+                <p>Overland</p>
+              </div>
+            </div>
+            <div class="items itemB" id="why-hover" onclick="location.href='#'" >
+              <div class="img-wrapping">
+                  <img class="hover-item2" src="../JEEP리디자인/img/grid-item2.png" alt="">
+                <div class="items-sub">
+                  <p>Grand Gladiator</p>
+                  <p>Limited</p>
+                </div>
+              </div>
+            </div>
+            <div class="items itemB">
+              <div class="img-wrapping">
+                <img class="hover-item2" src="../JEEP리디자인/img/grid-item2.png" alt="">
+              </div>
+            </div>
+            <div class="items itemA text-box">
+              <img class="hover-item1" id="jeep-img" src="../JEEP리디자인/img/grid-item1.png" alt="">
+
+            </div>
+            <div class="items itemC" onclick="location.href='#'" style="cursor: pointer;">
+              <img class="hover-item3" src="../JEEP리디자인/img/grid-item3.png" alt="">
+              <div class="items-sub">
+                <p>Grand Cherokee L</p>
+                <p>Limited</p>
+              </div>
+            </div>
+            <div class="items itemD" onclick="location.href='#'" style="cursor: pointer;">
+              <div class="img-wrapping">
+              <img class="hover-item4" src="../JEEP리디자인/img/grid-item4.png" alt="">
+              <div class="items-sub">
+                <p>RANGULAR</p>
+                <p>Overland</p>
+              </div>
+            </div>
+            </div>
+            <p class="caution">*실제 모델을 본따 뭐시기 뭐시기할것입니다. 주의해주세요</p>
+          </div>
+
+        </section>
+
+        <!-- 카탈로그 --> 
+
+
+          <section class="catalog-select"> 
+            <div class="inner">
+              <h2 class="title-font">카탈로그</h2>
+              <h2 class="sub-font">시승 신청 전 취향을 만들어보세요. 찾아보세요!</h2>
+              <div class="catalog-btn">
+                <button type="button" class="car-btn btn-active">자동차</button>
+                <button type="button" class="accesori-btn">액세서리</button>
+              </div>
+            <div class="swiper catalogSwiper">
+              <div class="swiper-pagination" style="top: 32px"></div>
+    
+              <div class="swiper-wrapper">
+        
+                <div class="swiper-slide 1tiem">
+                  <div class="catalog-total-wrap">
+                    <div class="img-box">
+                      <img src="./img/catalog-1.png" width="1240" height="783" alt="메인 1번 자동차" />
+                    </div>  
+                    <div class="catalog-txt">
+                      <p>why do you live in city always? </p>
+                      <h2>GRAND CHEROKEE L</h2>
+                      <button type="button">DOWNLOAD</button>
+                      <a href="#">미리보기</a>
+                    </div>
+                  </div>
+                </div>
+        
+                <div class="swiper-slide 2item">
+                  <div class="catalog-total-wrap" >                
+                    <div class="img-box">
+                      <img src="./img/catalog-2.png" width="1240" height="783" alt="메인 1번 자동차" />
+                    </div>  
+                    <div class="catalog-txt">
+                      <p>live wildly, driving wildly.</p>
+                      <h2>GRAND GLADIATOR</h2>
+                      <button type="button">DOWNLOAD</button>
+                      <a href="#">미리보기</a>
+    
+                    </div>
+                  </div>
+                </div>
+        
+                   <div class="swiper-slide 3item">  
+                      <div class="catalog-total-wrap">            
+                        <div class="img-box">
+                          <img src="./img/catalog-3.png" width="1240" height="783" alt="메인 1번 자동차" />
+                        </div> 
+                        <div class="catalog-txt">
+                          <p>carpe diem, pray more</p>
+                          <h2>GRAND RANGULAR</h2>
+                          <button type="button">DOWNLOAD</button>
+                      <a href="#">미리보기</a>
+    
+                        </div> 
+                      </div>   
+                   </div>
+    
+                   
+                   <div class="swiper-slide 4item">    
+                    <div class="catalog-total-wrap">          
+                    <div class="img-box">
+                      <img src="./img/catalog-4.png" width="1240" height="783" alt="메인 1번 자동차" />
+                    </div>  
+                    <div class="catalog-txt">
+                      <p>ocean driving is exciting</p>
+                      <h2>GRAND 4XE SERIES</h2>
+                      <button type="button">DOWNLOAD</button>
+                      <a href="#">미리보기</a>
+    
+                    </div>
+                    </div>  
+                </div>
+    
+                <div class="swiper-slide 5item">     
+                  <div class="catalog-total-wrap">              
+                    <div class="img-box">
+                      <img src="./img/catalog-5.png" width="1240" height="783" alt="메인 1번 자동차" />
+                    </div>
+                    <div class="catalog-txt">
+                      <p>city work canvas-in</p>
+                      <h2>GRAND CALOPERES</h2>
+                      <button type="button">DOWNLOAD</button>
+                      <a href="#">미리보기</a>
+    
+                    </div>  
+                </div>
+              </div>
+        
+               
+        
+              </div>
+        
+            <div class="swiper-button-next"></div>
+            <div class="swiper-button-prev"></div>
+        
+    
+        </div>
+      </section>   
+
+      <!-- 액세서리 카탈로그  -->
+      <section class="acceso-select">
+        <div class="inner">
+          <h2 class="title-font">카탈로그</h2>
+          <h2 class="sub-font">시승 신청 전 취향을 만들어보세요. 찾아보세요!</h2>
+          <div class="catalog-btn">
+            <button type="button" class="car-btn btn-active">자동차</button>
+            <button type="button" class="accesori-btn">액세서리</button>
+          </div>
+        <div class="swiper accesoriSwiper">
+          <div class="swiper-pagination"  style="top: 32px"></div>
+    
+          <div class="swiper-wrapper">
+    
+            <div class="swiper-slide 1tiem">
+              <div class="catalog-total-wrap">
+                <div class="img-box">
+                  <img src="./img/accesori-catalog-1.png" width="1240" height="783" alt="메인 1번 자동차" />
+                </div>  
+                <div class="catalog-txt">
+                  <p>comportable and useable</p>
+                  <h2>SEET INTERIOR LINE</h2>
+                  <button type="button">DOWNLOAD</button>
+                  <a href="#">미리보기</a>
+                </div>
+              </div>
+            </div>
+    
+            <div class="swiper-slide 2item">
+              <div class="catalog-total-wrap" >                
+                <div class="img-box">
+                  <img src="./img/accesori-catalog-2.png" width="1240" height="783" alt="메인 1번 자동차" />
+                </div>  
+                <div class="catalog-txt">
+                  <p>specific information, LED system</p>
+                  <h2>DASHBOARD / CONTROL PANEL</h2>
+                  <button type="button">DOWNLOAD</button>
+                  <a href="#">미리보기</a>
+    
+                </div>
+              </div>
+            </div>
+    
+               <div class="swiper-slide 3item">  
+                  <div class="catalog-total-wrap">            
+                    <div class="img-box">
+                      <img src="./img/accesori-catalog-3.png" width="1240" height="783" alt="메인 1번 자동차" />
+                    </div> 
+                    <div class="catalog-txt">
+                      <p>huge and compact</p>
+                      <h2>INTERIOR STORAGE / COMPARTMENTS</h2>
+                      <button type="button">DOWNLOAD</button>
+                  <a href="#">미리보기</a>
+    
+                    </div> 
+                  </div>   
+               </div>
+    
+               
+               <div class="swiper-slide 4item">    
+                <div class="catalog-total-wrap">          
+                <div class="img-box">
+                  <img src="./img/accesori-catalog-4.png" width="1240" height="783" alt="메인 1번 자동차" />
+                </div>  
+                <div class="catalog-txt">
+                  <p>luxury handeler, smooth driving</p>
+                  <h2>STEERING WHEELS / INTERIOR LIGHTING</h2>
+                  <button type="button">DOWNLOAD</button>
+                  <a href="#">미리보기</a>
+    
+                </div>
+                </div>  
+            </div>
+    
+            <div class="swiper-slide 5item">     
+              <div class="catalog-total-wrap">              
+                <div class="img-box">
+                  <img src="./img/accesori-catalog-5.png" width="1240" height="783" alt="메인 1번 자동차" />
+                </div>
+                <div class="catalog-txt">
+                  <p>useable product for outdoor life</p>
+                  <h2>CAMPING AND MARCHANDISE</h2>
+                  <button type="button">DOWNLOAD</button>
+                  <a href="#">미리보기</a>
+    
+                </div>  
+            </div>
+          </div>
+    
+           
+    
+          </div>
+    
+        <div class="swiper-button-next"></div>
+        <div class="swiper-button-prev"></div>
+    
+           <!-- <div class="inner"> -->
+           <!-- </div> -->
+    
+    </div>
+    </section>    
+
+
+          <!-- 시승신청하기 -->
+            <section class="car-form">
+              <div class="inner">
+                    <h2 class="title-font">시승 신청하기</h2>
+                    <p class="sub-font">가까운 체험장에서 직접 시승해보세요.</p>
+
+                 
+
+                        <form action="" method="get" class="form-example" id="car-form">
+              <p class="must-font"><span class="strong-color">*</span> 필수입력</p>
+
+                    <div class="car-form-wrap">      
+
+                      <div class="form-left">
+                            <div class="form-example form-left form-must">
+                              <label for="name">이름 </label>
+                              <input type="text" name="name" id="name" placeholder="이름" class="form-main" required />
+                            </div>
+                            <div class="form-example form-left form-must">
+                              <label for="email">이메일 주소 </label>
+                              <input type="email" name="email" id="email" placeholder="이메일 주소" class="form-main" required />
+                          </div>
+                      </div>
+                    
+                        <div class="form-right">
+                          <div class="form-example form-must">
+                            <label for="name">연락처 </label>
+                            <input type="text" name="phone" id="phone"  placeholder="연락처" class="form-main" required />
+                        </div>
+                      
+                          <div class="form-example form-must">
+                            <label for="email" class="select-label">전시장 선택 </label>
+                      <select name="exhibition" id="exhibition" class="form-main select">
+                        <option value="select">전시장 선택</option>
+                        <option value="php">인천 전시장 KT 모터스</option>
+                        <option value="php">포항 전시장 경북 모터스</option>
+                        <option value="php">대구 전시장 대경모터스</option>
+                        <option value="php">창원 전시장 대경모터스</option>
+                        <option value="php">청담 전시장 렉스모터스</option>
+                        <option value="php">구리 전시장 코오롱제이모빌리티</option>
+                        <option value="php">동탄 전시장 비전오토모빌</option>
+                        <option value="php">천안 전시장 비전오토모빌</option>
+                        <option value="php">대전 전시장 비전오토모빌</option>
+                        <option value="php">수원 전시장 비전오토모빌</option>
+                        <option value="php">분당 전시장 빅토리 오토모티브</option>
+                        <option value="php">광주 전시장 선일 모터스</option>
+                        <option value="php">서초 전시장 케이씨씨모빌리티(Jeep)</option>
+                        <option value="php">원주 전시장 에스에스 오토모빌</option>
+                        <option value="php">부산 전시장 우진 모터스</option>
+                        <option value="php">울산 전시장 우진 모터스</option>
+                        <option value="php">안양 전시장 케이씨씨모빌리티(Jeep)</option>
+                        <option value="php">의정부 전시장 케이씨씨모빌리티(Jeep)</option>
+                        <option value="php">강서 전시장 프리마모터스</option>
+                        <option value="php">일산 전시장 프리마모터스</option>
+                        <option value="php">송파 전시장 코오롱 제이 모빌리티</option>
+                   
+                      </select>
+
+                          </div>
+                        </div>
+                </div>
+           
+              
+                <div class="form-total-wrap">
+                <div class="form-btm">
+
+                  <div class="form-check-left">
+                      <div class="personal">
+                        <label for="personal"></label>
+                        <input type="checkbox" value="개인정보 수집 동의" class="personal-check" />
+                        <span>개인정보 수집에 동의합니다. (필수)<a onclick="openChildWindow('popup-1.html', '_blank' , 'width=1024,height=573,left=200,top=50')" class="pop-right">원문보기</a></span>
+                      </div>
+
+                      <div class="personal">
+                        <label for=""> </label>
+                        <input type="checkbox" value="개인정보 제3자 제공 동의" class="personal-give-check" />
+                        <span>개인정보 제3자 제공 약관 및 내용에 동의합니다.. (필수)<a onclick="openChildWindow('popup-2.html', '_blank' , 'width=1024,height=573,left=200,top=50')" class="pop-right">원문보기</a></span>
+                      </div>
+
+                      <div class="personal">
+                        <label for=""> </label>
+                        <input type="checkbox" value="마케팅 정보 제공 동의" class="personal-macketing" />
+                        <span>마케팅 및 정보 활용 / 메세지 확인에 동의합니다. (선택)<a onclick="openChildWindow('popup-3.html', '_blank' , 'width=1024,height=573,left=200,top=50')" class="pop-right">원문보기</a></span>
+                      </div>
+                    </div>
+
+                    
+                </div>
+
+                <div class="form-submit">
+                  <input type="submit" value="시승신청" class="form-complete" />
+                </div>
+              </div>
+
+                 
+
+                </div>
+              </form>
+
+            </section>
+          </div>
+        </div>    
+        </section>
+        <!-- 푸터 영역 -->
+        <section class="footer">
+          <div class="inner">
+
+            <div class="top-footwrap">
+            <div class="top-footer">
+               <p>
+                  <a href="#"><span>이용약관</span></a>
+                  <a href="#"><span style="font-weight: 600;">커넥티스 서비스 개인(위치)정보 처리방침 </span></a>
+                  <a href="#"><span>커넥티스 서비스 이용 약관</span></a>
+                  <a href="#" onclick="window.open('popup-1.html','','width=372,height=573, left=200,top=50');"><span>개인정보 수집 및 이용 약관</span></a>
+               </p>
+               <p>
+                 <a href="#"><span>Legal,safety, and trademark informaition</span></a>
+                 <a href="#"><span>FIND YOUR CONTRY</span></a>
+                 <a href="#"><span>CONTACT US</span></a>
+                 <a href="#"><span>SITE MAP</span></a>
+               </p>
+              </div>
+              <div class="sns-wrap">
+                <a href="#" class="facebook"></a>
+                <a href="#" class="instagram"></a>
+                <a href="#" class="youtube"></a>
+                <a href="#" class="kakao"></a>
+              </div>
+            </div>
+
+            <div class="footer-btm">
+              <img src="./img/footer-logo.png" alt="">
+              <small class="copy-right" style="font-size: 11px;">2022 Stellantls. All Rights Reserved. Chrysler, Jeep 및 FLAT 로고는 Stellants의 등록 상표입니다.</small>
+            </div>
+
+          </div>
+        </section>
+
+
+    </div>
+
+
+    
+
+
+
+
+
+
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+    <script>
+      var swiper = new Swiper(".carSwiper", {
+        slidesPerView: 1,
+        spaceBetween: 200,
+        loop: true,
+        pagination: {
+          el: ".swiper-pagination",
+          clickable: true,
+        },
+
+        nextButton: '.swiper-button-next',
+        prevButton: '.swiper-button-prev',
+
+        navigation: {
+          nextEl: ".swiper-button-next",
+          prevEl: ".swiper-button-prev",
+        },
+        observer: true,
+        observeParents: true,
+        parallax:true,
+  
+      //   autoplay:{ //자동실행
+      // 	delay:4000,//자동실행 간격 (1000=1초)
+      // 	disableOnInteraction:false, //true로 설정하면 메뉴를 누른후부터는 자동실행 안됨
+      //   speed:5000,
+      // },
+  
+      });
+    </script>
+
+<script>
+  var swiper = new Swiper(".catalogSwiper", {
+    slidesPerView: 1,
+    loop: true,
+    loopAdditionalSlides : 1,
+    pagination: {
+      el: ".swiper-pagination",
+      clickable: true,
+    },
+
+    nextButton: '.swiper-button-next',
+    prevButton: '.swiper-button-prev',
+
+    navigation: {
+      nextEl: ".swiper-button-next",
+      prevEl: ".swiper-button-prev",
+    },
+    observer: true,
+    observeParents: true,
+    parallax:true,
+
+    autoplay:{ //자동실행
+    delay:3000,//자동실행 간격 (1000=1초)
+    // disableOnInteraction:false, //true로 설정하면 메뉴를 누른후부터는 자동실행 안됨
+  },
+
+  });
+</script>
+
+<script>
+  var swiper = new Swiper(".accesoriSwiper", {
+    slidesPerView: 1,
+    loop: true,
+    loopAdditionalSlides : 1,
+    pagination: {
+      el: ".swiper-pagination",
+      clickable: true,
+    },
+
+    nextButton: '.swiper-button-next',
+    prevButton: '.swiper-button-prev',
+
+    navigation: {
+      nextEl: ".swiper-button-next",
+      prevEl: ".swiper-button-prev",
+    },
+    observer: true,
+    observeParents: true,
+    parallax:true,
+
+   autoplay:{ //자동실행
+   delay:3000,//자동실행 간격 (1000=1초)
+    // disableOnInteraction:false, //true로 설정하면 메뉴를 누른후부터는 자동실행 안됨
+  },
+
+  });
+</script>
+
+
+<script src="https://code.jquery.com/jquery-3.7.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+    <script src="./js/basic.js"></script>
+    <script src="./js/event.js"></script>
+  </body>
+</html>

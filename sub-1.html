@@ -1,0 +1,454 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>지프 리디자인</title>
+
+    <!-- CSS files -->
+    <link rel="stylesheet" href="./css/reset.css" />
+    <link rel="stylesheet" href="./css/default.css" />
+    <link rel="stylesheet" href="./css/subDefault.css" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+
+
+
+    <!-- HTML -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- JS -->
+
+    <link href="https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Alfa+Slab+One&display=swap" rel="stylesheet">
+
+    <!-- font-awesome -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+      integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+  </head>
+  <body>
+    <div class="black-bg"></div>
+
+    <div class="wrap">
+      <!-- 헤더 섹션 -->
+      <section class="header">
+        <h2 class="blind">헤더</h2>
+        <div class="inner">
+          <div class="head-wrap">
+            <h2 class="blind">로고</h2>
+            <h1 id="main-logo">
+              <a href="index2.html" id="logo-link" class="home-logo">
+                <img src="./img/JEEP-로고1.png" alt="지프 메인 로고" id="main-logo-img" />
+              </a>
+            </h1>
+            <ul class="top-gnb">
+              <li><a href="#">모델소개</a></li>
+              <li><a href="#">JEEP LIFE</a></li>
+              <li><a href="#">서비스</a></li>
+              <li><a href="#">3D모델보기</a></li>
+            </ul>
+            <ul class="top-gnb2">
+              <li><a href="#">시승문의</a></li>
+              <li><a href="#">딜러찾기</a></li>
+              <li><a href="#">PHP 080-353-0405</a></li>
+            </ul>
+            <div class="top-searchbar">
+              <fieldset>
+                <label for="main-search" class="blind">gnb-메인 검색</label>
+                <i class="fa-solid fa-magnifying-glass" style="color: #fff; font-size: 12px"></i>
+                <input type="text" id="main-search" name="name" required minlength="4" maxlength="8" size="10" class="search-btn" />
+              </fieldset>
+            </div>
+          </div>
+        </div>
+
+        <div class="hide-gnb">
+          <div class="inner">
+          <div class="hide-gnb-wrap">
+             <ul class="first-col model">
+               <li><a href="#">GRAND CHEROKEE</a></li>
+               <li><a href="#">RENEGADE</a></li>
+               <li><a href="#">WRANGLER</a></li>
+               <li><a href="#">WRANGLER 4XE</a></li>
+               <li><a href="#">GLADIATOR</a></li>
+             </ul>
+
+             <ul class="first-col brand-gnb">
+              <li><a href="#">BRAND STORY</a></li>
+              <li><a href="#">PRESS ROOM</a></li>
+              <li><a href="#">PARTNERSHIP</a></li>
+            </ul>
+
+             <ul class="first-col service">
+               <li><a href="#">서비스 캠페인</a></li>
+               <li><a href="#">서비스 예약</a></li>
+               <li><a href="#">연장 보증</a></li>
+               <li><a href="#">제도 관련 안내</a></li>
+               <li><a href="#">부품 관련 안내</a></li>
+               <li><a href="#">프로모션</a></li>
+               <li><a href="#">문의하기</a></li>
+             </ul>
+
+
+             <ul class="first-col 3d-model">
+               <li><a href="#">WRANGULAR</a></li>
+               <li><a href="#">GLADIATOR</a></li>
+               <li><a href="#">RENEGADE</a></li>
+               <li><a href="#">GRAND CHEROKEE</a></li>
+             </ul>
+            </div>
+          </div>
+        </div>
+
+      </section>
+
+
+      <!-- form car select -->
+
+
+      <section class="carform-select">
+        <div class="inner">
+          <h2 class="title-font">차량 견적 조회</h2>
+          <p class="sub-font">선택차량: <strong class="strong-color click-model">JEEP-RANGULAR</strong></p>
+        </div>
+
+        <div class="swiper carformSwiper">
+        <div class="swiper-pagination"></div>
+
+          <div class="swiper-wrapper">
+    
+            <div class="swiper-slide 1tem" id="window-load-slide">
+                <div class="img-box">
+                  <img src="./img/carform-1.png" alt="">
+                  <p>JEEP GLADIATOR</p>
+                </div>  
+            </div>
+    
+            <div class="swiper-slide 2item">
+                <div class="img-box">
+                  <img src="./img/carform-2.png" alt="">
+                  <p>JEEP WRANGLER</p>
+
+                </div>  
+            </div>
+    
+               <div class="swiper-slide 3item">
+                   <div class="img-box">
+                  <img src="./img/carform-3.png" alt="">
+                   <p>JEEP RENEGADE</p>
+
+                   </div>  
+
+               </div>
+    
+            <div class="swiper-slide item4">
+                <div class="img-box">
+                  <img src="./img/carform-4.png" alt="">
+                   <p>JEEP CHEROKEE</p>
+
+                </div>
+
+            </div>
+    
+                <div class="swiper-slide item5">
+                    <div class="img-box">
+                      <img src="./img/carform-5(wrangler).png" alt="">
+                      <p>JEEP WRANGLER</p>
+                    </div> 
+                
+
+                </div>
+
+                <div class="swiper-slide item6">
+                  <div class="img-box">
+                    <img src="./img/carform-6(cherokee-4XE).png" alt="">
+                <p>JEEP CHEROKEE L</p>
+
+                  </div> 
+
+              </div>
+
+              <div class="swiper-slide item7">
+                <div class="img-box">
+                  <img src="./img/carform-6(gladiator).png" alt="">
+                <p>JEEP Gladiator</p>
+
+                </div>
+
+            </div>
+    
+           
+
+          </div>
+  
+
+
+          </div>
+    
+        <div class="swiper-button-next"></div>
+        <div class="swiper-button-prev"></div>
+    
+           <!-- <div class="inner"> -->
+           <!-- </div> -->
+
+    </div>
+  </section>    
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+   
+
+      <!-- 시승신청  -->
+      <section class="car-form car-sub-form car-caculate">
+        <div class="inner">
+              <h2 class="title-font">견적 신청하기</h2>
+              <p class="sub-font">선택차량 : <span class="click-model">JEEP-RANGULAR</span></p>
+           
+
+                  <form action="" method="get" class="form-example" id="calculate-form">
+              <p class="must-font"><span class="strong-color">*</span> 필수입력</p>
+
+              <div class="car-form-wrap subform">      
+                <div class="form-left-wrap">
+
+                      <div class="form-example form-left form-must">
+                        <label for="name">이름</label>
+                        <input type="text" name="name" id="name" placeholder="이름" class="form-main" required />
+                      </div>
+
+                      <div class="form-example form-left form-must">
+                        <label for="email">연락처 </label>
+                        <input type="email" name="email" id="email" placeholder="연락처" class="form-main" required />
+                    </div>
+
+                    <div class="form-example form-left select-box form-must">
+                      <label for="email" class="select-label">전시장 선택 </label>
+                      <select name="exhibition" id="exhibition" class="form-main select">
+                        <option value="select">전시장 선택</option>
+                        <option value="php">인천 전시장 KT 모터스</option>
+                        <option value="php">포항 전시장 경북 모터스</option>
+                        <option value="php">대구 전시장 대경모터스</option>
+                        <option value="php">창원 전시장 대경모터스</option>
+                        <option value="php">청담 전시장 렉스모터스</option>
+                        <option value="php">구리 전시장 코오롱제이모빌리티</option>
+                        <option value="php">동탄 전시장 비전오토모빌</option>
+                        <option value="php">천안 전시장 비전오토모빌</option>
+                        <option value="php">대전 전시장 비전오토모빌</option>
+                        <option value="php">수원 전시장 비전오토모빌</option>
+                        <option value="php">분당 전시장 빅토리 오토모티브</option>
+                        <option value="php">광주 전시장 선일 모터스</option>
+                        <option value="php">서초 전시장 케이씨씨모빌리티(Jeep)</option>
+                        <option value="php">원주 전시장 에스에스 오토모빌</option>
+                        <option value="php">부산 전시장 우진 모터스</option>
+                        <option value="php">울산 전시장 우진 모터스</option>
+                        <option value="php">안양 전시장 케이씨씨모빌리티(Jeep)</option>
+                        <option value="php">의정부 전시장 케이씨씨모빌리티(Jeep)</option>
+                        <option value="php">강서 전시장 프리마모터스</option>
+                        <option value="php">일산 전시장 프리마모터스</option>
+                        <option value="php">송파 전시장 코오롱 제이 모빌리티</option>
+                   
+                      </select>
+
+                  </div>
+
+                  <div class="form-example form-left select-box form-must" id="form-left-last">
+                    <label for="email" class="select-label">지프를 알게된 계기</label>
+                    <select name="exhibition" id="know" class="form-main select">
+                      <option value="select">지프를 알게된 계기</option>
+                      <option value="how-to-know">온라인 광고</option>
+                      <option value="how-to-know">온라인 검색</option>
+                      <option value="how-to-know">TV 광고</option>
+                      <option value="how-to-know">라디오 광고</option>
+                      <option value="how-to-know">신문 광고</option>
+                      <option value="how-to-know">DM/MMS/카카오채널</option>
+                      <option value="how-to-know">지인 소개</option>
+                      <option value="how-to-know">옥외 광고</option>
+                      <option value="how-to-know">소셜 네트워크</option>                      
+                    </select>
+                </div>
+                
+                  
+
+                </div>
+              
+                  <div class="form-right-wrap">
+                    <div class="form-example form-right">
+                      <label for="name">이메일 주소 </label>
+                      <input type="text" name="phone" id="phone"  placeholder="연락처" class="form-main" required />
+                     </div>
+                
+                    <div class="form-example form-right select-box form-must">
+                      <label for="email" class="select-label" >구매 예상 시기 </label>
+                    <select name="exhibition" id="when-buy" class="form-main select">
+                      <option value="select">구매 예상 시기</option>
+                      <option value="when-buy">인천 전시장 KT 모터스</option>
+                      <option value="when-buy">1개월 이내</option>
+                      <option value="when-buy">3개월 이내</option>
+                      <option value="when-buy">6개월 이내</option>
+                      <option value="when-buy">1년 이내</option>
+                      <option value="when-buy">1년 이후</option>
+                    </select>
+                    </div>
+
+                    <div class="form-example form-right" id="qna">
+                      <label for="name">문의사항 </label>
+                      <!-- <input type="text" name="phone" id="phone"  placeholder="문의사항" class="form-main" required /> -->
+                      <textarea name="문의사항 입력" id="whatgoal" cols="30" rows="10" class="form-main" placeholder="문의사항"></textarea>
+                     </div>
+                
+                    
+                  </div>
+          </div>
+     
+        
+
+          <div class="form-btm">
+
+
+            <div class="form-check-left">
+              <div class="personal">
+                <label for="personal"></label>
+                <input type="checkbox" value="개인정보 수집 동의" class="personal-check" />
+                <span>개인정보 수집에 동의합니다. (필수)<a onclick="openChildWindow('popup-1.html', '_blank' , 'width=1024,height=573,left=200,top=50')" class="pop-right">원문보기</a></span>
+              </div>
+
+              <div class="personal">
+                <label for=""> </label>
+                <input type="checkbox" value="개인정보 제3자 제공 동의" class="personal-give-check" />
+                <span>개인정보 제3자 제공 약관 및 내용에 동의합니다.. (필수)<a onclick="openChildWindow('popup-2.html', '_blank' , 'width=1024,height=573,left=200,top=50')" class="pop-right">원문보기</a></span>
+              </div>
+
+              <div class="personal">
+                <label for=""> </label>
+                <input type="checkbox" value="마케팅 정보 제공 동의" class="personal-macketing" />
+                <span>마케팅 및 정보 활용 / 메세지 확인에 동의합니다. (선택)<a onclick="openChildWindow('popup-3.html', '_blank' , 'width=1024,height=573,left=200,top=50')" class="pop-right">원문보기</a></span>
+              </div>
+            </div>
+
+            <div class="form-submit">
+              <input type="submit" value="시승신청" class="form-complete" onclick="submitForm()" />
+            </div>
+
+
+          </div>
+        </form>
+      </section>
+    </div>
+  </div>    
+  </section>
+
+
+
+
+
+     
+    
+      
+        <!-- 푸터 영역 -->
+        <section class="footer">
+          <div class="inner">
+
+            <div class="top-footwrap">
+            <div class="top-footer">
+               <p>
+                  <a href="#"><span>이용약관</span></a>
+                  <a href="#"><span style="font-weight: 600;">커넥티스 서비스 개인(위치)정보 처리방침 </span></a>
+                  <a href="#"><span>커넥티스 서비스 이용 약관</span></a>
+                  <a href="#"><span>개인정보 수집 및 이용 약관</span></a>
+               </p>
+               <p>
+                 <a href="#"><span>Legal,safety, and trademark informaition</span></a>
+                 <a href="#"><span>FIND YOUR CONTRY</span></a>
+                 <a href="#"><span>CONTACT US</span></a>
+                 <a href="#"><span>SITE MAP</span></a>
+               </p>
+              </div>
+              <div class="sns-wrap">
+                <a href="#" class="facebook"></a>
+                <a href="#" class="instagram"></a>
+                <a href="#" class="youtube"></a>
+                <a href="#" class="kakao"></a>
+              </div>
+            </div>
+
+            <div class="footer-btm">
+              <img src="./img/footer-logo.png" alt="">
+              <small class="copy-right" style="font-size: 11px;">2022 Stellantls. All Rights Reserved. Chrysler, Jeep 및 FLAT 로고는 Stellants의 등록 상표입니다.</small>
+            </div>
+
+          </div>
+        </section>
+
+        
+
+
+    </div>
+
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+
+    <script>
+      var swiper = new Swiper(".carformSwiper", {
+        slidesPerView: 5,
+        freemode : true,
+        loop: true,
+        pagination: {
+          el: ".swiper-pagination",
+          clickable: true,
+        },
+
+        nextButton: '.swiper-button-next',
+        prevButton: '.swiper-button-prev',
+
+        navigation: {
+          nextEl: ".swiper-button-next",
+          prevEl: ".swiper-button-prev",
+        },
+        observer: true,
+        observeParents: true,
+        parallax:true,
+  
+      //   autoplay:{ //자동실행
+      // 	delay:4000,//자동실행 간격 (1000=1초)
+      // 	disableOnInteraction:false, //true로 설정하면 메뉴를 누른후부터는 자동실행 안됨
+      //   speed:5000,
+      // },
+  
+      });
+
+      
+
+
+    </script>
+    </script>
+
+
+
+    
+
+<script src="https://code.jquery.com/jquery-3.7.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+
+<script src="./js/basic.js"></script>
+<script src="./js/event.js"></script>
+
+  </body>
+</html>

@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>지프 리디자인</title>
+
+    <!-- CSS files -->
+    <link rel="stylesheet" href="./css/reset.css" />
+    <link rel="stylesheet" href="./css/default.css" />
+    <link rel="stylesheet" href="./css/subDefault.css" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+
+
+
+    <!-- HTML -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- JS -->
+
+    <link href="https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Alfa+Slab+One&display=swap" rel="stylesheet">
+
+    <!-- font-awesome -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+      integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+    <script type="text/javascript">
+
+      // window.onload = function() {
+      //     document.querySelector('#click-submodel').innerHTML = clickSub;
+      //     document.querySelector('.sub-img-box>img').src = clickModelSrc;
+      // }
+
+      //현재 문제 : 살짝 버벅거림 일부로 rady썼는데
+      
+      $(document).ready(function(){
+      $('#click-submodel').html(clickSub);
+      $('.sub-img-box > img').attr('src', clickModelSrc);
+      });
+
+
+    </script>
+
+  </head>
+  <body>
+
+              <div class="wrap">
+                <div class="black-bg"></div>
+                <!-- 헤더 섹션 -->
+                <section class="header">
+                  <h2 class="blind">헤더</h2>
+                  <div class="inner">
+                    <div class="head-wrap">
+                      <h2 class="blind">로고</h2>
+                      <h1 id="main-logo">
+                        <a href="#" id="logo-link">
+                          <img src="./img/JEEP-로고1.png" alt="지프 메인 로고" id="main-logo-img" onclick = "location.href = 'index2.html'" />
+                        </a>
+                      </h1>
+                      <ul class="top-gnb">
+                        <li><a href="#">모델소개</a></li>
+                        <li><a href="#">JEEP LIFE</a></li>
+                        <li><a href="#">서비스</a></li>
+                        <li><a href="#">3D모델보기</a></li>
+                      </ul>
+                      <ul class="top-gnb2">
+                        <li><a href="#">시승문의</a></li>
+                        <li><a href="#">딜러찾기</a></li>
+                        <li><a href="#">PHP 080-353-0405</a></li>
+                      </ul>
+                      <div class="top-searchbar">
+                        <h2 class="blind">검색</h2>
+                        <fieldset>
+                          <label for="main-search" class="blind">gnb-메인 검색</label>
+                          <i class="fa-solid fa-magnifying-glass" style="color: #fff; font-size: 12px"></i>
+                          <input type="text" id="main-search" name="name" required minlength="4" maxlength="8" size="10" class="search-btn" />
+                        </fieldset>
+                      </div>
+                    </div>
+                  </div>
+                
+                  <h2 class="blind">gnb 내용</h2>
+                  <div class="hide-gnb">
+                    <div class="inner">
+                    <div class="hide-gnb-wrap">
+                       <ul class="first-col model">
+                         <li><a href="#">GRAND CHEROKEE</a></li>
+                         <li><a href="#">RENEGADE</a></li>
+                         <li><a href="#">WRANGLER</a></li>
+                         <li><a href="#">WRANGLER 4XE</a></li>
+                         <li><a href="#">GLADIATOR</a></li>
+                       </ul>
+                     
+                       <ul class="first-col brand-gnb">
+                        <li><a href="#">BRAND STORY</a></li>
+                        <li><a href="#">PRESS ROOM</a></li>
+                        <li><a href="#">PARTNERSHIP</a></li>
+                      </ul>
+                    
+                       <ul class="first-col service">
+                         <li><a href="#">서비스 캠페인</a></li>
+                         <li><a href="#">서비스 예약</a></li>
+                         <li><a href="#">연장 보증</a></li>
+                         <li><a href="#">제도 관련 안내</a></li>
+                         <li><a href="#">부품 관련 안내</a></li>
+                         <li><a href="#">프로모션</a></li>
+                         <li><a href="#">문의하기</a></li>
+                       </ul>
+                     
+                     
+                       <ul class="first-col 3d-model">
+                         <li><a href="#">WRANGULAR</a></li>
+                         <li><a href="#">GLADIATOR</a></li>
+                         <li><a href="#">RENEGADE</a></li>
+                         <li><a href="#">GRAND CHEROKEE</a></li>
+                       </ul>
+                      </div>
+                    </div>
+                  </div>
+                
+                </section>
+              
+              
+              
+                <h2 class="blind">견적 상세 내용 및 고객센터 안내</h2>
+                <section class="carculate-ok">
+                  <div class="inner">
+                    <div class="carculate-font">
+                        <h2 class="title-font">차량 견적 신청이 완료되었습니다.</h2>
+                        <p class="sub-font">선택 차량 : <span class="strong-color" id="click-submodel">NEW RANGLER</span></p>
+                        <p class="cs-font">해당 정보로 신청이 완료되었습니다. 기타 궁금하신 사항은 <br>
+                          000-09090-0505로 연락주시면 안내해드리겠습니다.</p>
+                    </div>    
+                      <div class="sub-img-box">
+                        <img src="../JEEP리디자인/img/carculateOK-car.png" alt="견적 요청 결정된 자동차 이미지">
+                      </div>
+                </div>
+                </section>
+                       <!-- 푸터 영역 -->
+                       <h2 class="blind">페이지 하단 이용약관 및 SNS</h2>
+                       <section class="footer" id="sub-2footer">
+                         <div class="inner">
+                        
+                           <div class="top-footwrap">
+                           <div class="top-footer">
+                              <p>
+                                 <a href="#"><span>이용약관</span></a>
+                                 <a href="#"><span style="font-weight: 600;">커넥티스 서비스 개인(위치)정보 처리방침 </span></a>
+                                 <a href="#"><span>커넥티스 서비스 이용 약관</span></a>
+                                 <a href="#"><span>개인정보 수집 및 이용 약관</span></a>
+                              </p>
+                              <p>
+                                <a href="#"><span>Legal,safety, and trademark informaition</span></a>
+                                <a href="#"><span>FIND YOUR CONTRY</span></a>
+                                <a href="#"><span>CONTACT US</span></a>
+                                <a href="#"><span>SITE MAP</span></a>
+                              </p>
+                             </div>
+                             <div class="sns-wrap">
+                               <a href="#" class="facebook"></a>
+                               <a href="#" class="instagram"></a>
+                               <a href="#" class="youtube"></a>
+                               <a href="#" class="kakao"></a>
+                             </div>
+                           </div>
+                         
+                           <div class="footer-btm">
+                             <img src="./img/footer-logo.png" alt="스텔란티스 로고">
+                             <small class="copy-right" style="font-size: 11px;">2022 Stellantls. All Rights Reserved. Chrysler, Jeep 및 FLAT 로고는 Stellants의 등록 상표입니다.</small>
+                           </div>
+                         
+                         </div>
+                       </section>
+
+
+
+
+
+     
+    
+      
+ 
+    </div>
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>    
+<script src="./js/basic.js"></script>
+<script src="./js/event.js"></script>
+
+</body>
+</html>
+
+
+
+
+
+
+
+
